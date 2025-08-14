@@ -1,6 +1,21 @@
 # fin
 synthetic data in finance papers
 
+| Paper | Year | Data Type / Variables | Method | Purpose of Synthetic Data |
+|-------|------|----------------------|--------|---------------------------|
+| ABIDES: Towards High-Fidelity Multi-Agent Market Simulation | 2020 | Limit order book events, trades, agent states | Multi-agent ABM simulation | Market microstructure analysis, strategy testing |
+| GANs and Synthetic Financial Data: Calculating VaR | 2021 | Historical stock prices, returns | GAN-based scenario generation | VaR estimation, stress testing |
+| Generating Realistic Stock Market Order Streams | 2022 | Limit order book message streams | Agent-based simulation + empirical calibration | Market impact analysis, algorithmic trading evaluation |
+| Generation of Synthetic Financial Time Series by Diffusion Models | 2023 | Stock prices, returns, volatility | Denoising diffusion probabilistic models | Realistic price path simulation for ML training |
+| Limit Order Book Dynamics and Order Size Modelling Using Compound Hawkes Process | 2019 | LOB event times, order sizes | Compound Hawkes process | Capturing self-exciting market events, risk modeling |
+| Limit Order Book Simulation with Generative Adversarial Networks | 2021 | LOB depth snapshots | GAN with convolutional architecture | High-fidelity LOB state generation |
+| Neural Stochastic Agent-Based Limit Order Book Simulation with Neural Point Processes | 2022 | LOB events with timestamps | Neural point processes + agent-based model | Realistic market event simulation |
+| Quant GANs: Deep Generation of Financial Time Series | 2020 | Stock prices, returns | WGAN-GP with convolutional & recurrent layers | Time series generation for trading strategy development |
+| Synthetic Data Applications in Finance | 2021 | Various financial datasets | Multiple generative models (GAN, VAE, ABM) | Privacy preservation, stress testing, model training |
+| TRADES: Generating Realistic Market Simulations with Diffusion Models | 2023 | LOB states and events | Diffusion models conditioned on market states | Market scenario generation for policy testing |
+| TSGBench: Time Series Generation Benchmark | 2023 | Multi-domain time series (incl. finance) | Benchmarking multiple models (ARIMA, GANs, VAEs, Diffusion) | Model comparison and selection |
+| Time-series Generative Adversarial Networks (TimeGAN) | 2019 | Multivariate financial time series | GAN + RNN + supervised loss | Preserve temporal dependencies in synthetic sequences |
+
 ## ABIDES: Towards High-Fidelity Multi-Agent Market Simulation (SIGSIM-PADS 2020)
 
 - **Data / Variables:**
@@ -65,7 +80,7 @@ synthetic data in finance papers
 - **Code:**
   - Analysis implemented in Python (PyTorch) and R (quantmod, randomForest, randomForestExplainer)
  
-### Generating Realistic Stock Market Order Streams (AAAI-20)
+## Generating Realistic Stock Market Order Streams (AAAI-20)
 
 - **Data / Variables:**
   - **Real data:** Millisecond-level limit order streams for GOOG (≈230k orders/day) and a small-cap stock (PN) from OneMarketData
@@ -114,7 +129,7 @@ synthetic data in finance papers
 - **Code:**
   - Data from OneMarketData (licensed), synthetic data from public simulator
 
-### Generation of Synthetic Financial Time Series by Diffusion Models (Neurocomputing, 2024)
+## Generation of Synthetic Financial Time Series by Diffusion Models (Neurocomputing, 2024)
 
 - **Data / Variables:**
   - Daily adjusted closing prices of 10 major S&P 500 constituent stocks (2013–2023)
@@ -156,7 +171,7 @@ synthetic data in finance papers
 - **Code**
   - Implemented in PyTorch
  
-### Limit Order Book Dynamics and Order Size Modelling Using Compound Hawkes Process (Quantitative Finance, 2020)
+## Limit Order Book Dynamics and Order Size Modelling Using Compound Hawkes Process (Quantitative Finance, 2020)
 
 - **Data / Variables:**
   - Level-1 limit order book (LOB) data for 5 liquid stocks from NASDAQ Nordic over 3 months
@@ -193,7 +208,7 @@ synthetic data in finance papers
   - Can be integrated into agent-based market models or used standalone for order flow generation
   - Parameter interpretability enables linking microstructure features to trader behavior
 
-### Limit Order Book Simulation with Generative Adversarial Networks (2021)
+## Limit Order Book Simulation with Generative Adversarial Networks (2021)
 
 - **Data / Variables:**
   - Real high-frequency LOB data for 5 U.S. equities from NASDAQ ITCH dataset
@@ -238,7 +253,7 @@ synthetic data in finance papers
   - Implemented in TensorFlow
   - Dataset from NASDAQ ITCH feed (licensed, not public)
 
-### Neural Stochastic Agent-Based Limit Order Book Simulation with Neural Point Processes (2023)
+## Neural Stochastic Agent-Based Limit Order Book Simulation with Neural Point Processes (2023)
 
 - **Data / Variables:**
   - High-frequency LOB event data from NASDAQ TotalView-ITCH feed
@@ -286,7 +301,7 @@ synthetic data in finance papers
   - No public code release
   - Dataset from NASDAQ ITCH feed (licensed)
  
-### Quant GANs: Deep Generation of Financial Time Series (2020)
+## Quant GANs: Deep Generation of Financial Time Series (2020)
 
 - **Data / Variables:**
   - Daily OHLCV data for S&P 500 constituents
@@ -325,7 +340,7 @@ synthetic data in finance papers
 - **Code / License:**
   - Dataset derived from publicly available S&P 500 historical prices
  
-### Synthetic Data Applications in Finance (2022)
+## Synthetic Data Applications in Finance (2022)
 
 - **Data / Variables:**
   - Broad review of data types in finance suitable for synthetic generation:
@@ -374,7 +389,7 @@ synthetic data in finance papers
   - Review paper
   - Examples reference public datasets (LOBSTER, Yahoo Finance, ECB statistics)
 
-### TRADES: Generating Realistic Market Simulations with Diffusion Models (2024)
+## TRADES: Generating Realistic Market Simulations with Diffusion Models (2024)
 
 - **Data / Variables:**
   - Limit Order Book (LOB) event data from cryptocurrency markets (BTC/ETH pairs)
@@ -420,7 +435,7 @@ synthetic data in finance papers
 - **Code / License:**
   - Crypto LOB dataset proprietary but similar data available from public crypto exchanges
 
-### TSGBench: Time Series Generation Benchmark (2023)
+## TSGBench: Time Series Generation Benchmark (2023)
 
 - **Data / Variables:**
   - Multiple real-world time series datasets across domains (including finance, energy, healthcare)
@@ -463,7 +478,7 @@ synthetic data in finance papers
   - Publicly available benchmark code and datasets on GitHub
   - Modular design allows easy addition of new datasets and models
 
-### Time-series Generative Adversarial Networks (TimeGAN) (2019)
+## Time-series Generative Adversarial Networks (TimeGAN) (2019)
 
 - **Data / Variables:**
   - General time series framework, tested on synthetic and real datasets
