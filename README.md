@@ -41,7 +41,7 @@ synthetic data in finance papers
   - Quantification of **price impact** from large single orders through “what-if” experiments
   - Full visibility into agent identities and intents for explainable analyses
 
-### GANs and Synthetic Financial Data: Calculating VaR (Applied Economics, 2025)
+## GANs and Synthetic Financial Data: Calculating VaR (Applied Economics, 2025)
 
 - **Data / Variables:**
   - Daily S&P 500 index values (2012–2022) and FTSE 100 index values (2010–2023)
